@@ -13,6 +13,7 @@
     'patterns': [
       { 'include': '#block_doc_comment' }
       { 'include': '#block_comment' }
+      { 'include': 'source.gfm' }
     ]
   }
   'block_comment': {
@@ -30,6 +31,9 @@
     'name': 'comment.line.documentation.rust'
     'begin': '//[!/](?=[^/])'
     'end': '$'
+    'patterns': [
+      { 'include': 'source.gfm' }
+    ]
   }
   'line_comment': {
     'comment': 'Single-line comment'
